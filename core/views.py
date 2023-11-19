@@ -26,7 +26,7 @@ def sign_up(request):
             email = form.cleaned_data.get('email').lower()
             
             user = form.save(commit=False)
-            user.username = email
+            #user.username = email
             user.save()
 
             login(request, user)
