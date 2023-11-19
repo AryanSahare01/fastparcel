@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+
+        {% load bootstrap4 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript jquery='full' %}
+
+        {% block head %}{% endblock %}
+
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            
+              <a class="navbar-brand" href="/">FastParcel</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Courier</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+
+        {% block content %}{% endblock %}
+
+
+        
+        
+        
+        
+         
+
+        
+        
+        
+        
+        <footer class='text-center mt-5 mb-5'>
+            &copy; PythonYoga.com
+        </footer>
+        
+        
+    </body>
+</html>
